@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="character_sheet.css">
+    <title>Character Sheet</title>
+</head>
+<body>
+    <form action="/action_page.php">
+    <div class="c-set">
+        <label for="game-set">שיטה:</label>
+        <input type="text" id="game-setme" name="game-set" value="חרבות וכשפים"><br>
+        <h2>דף דמות</h2>
+        <label for="c-type">סוג הדמות:</label>
+        <input type="text" id="c-type" name="c-type" value="בן-מחצית גשש"><br>
+    </div>
+
+    <div class="p-details">
+        <label for="p-name">שם השחקנ/ית:</label>
+        <input type="text" id="p-name" name="p-name" value="גליה פסי קיטרו"><br>
+
+        <label for="c-name">שם הדמות:</label>
+        <input type="text" id="c-name" name="c-name" value="גריזלדה דה-וויל"><br>
+
+        <label for="c-age">גיל:</label>
+        <input type="number" id="c-age" class="s-input" name="p-age" value="120">
+
+        <label for="c-gender">מין:</label>
+        <select id="c-gender" class="s-input" name="c-gender">
+            <option value="female">נקבה</option>
+            <option value="male">זכר</option>
+            <option value="other">אחר</option>
+        </select>
+
+        <label for="align">נטייה:</label>
+        <select id="align" name="align">
+            <option value="Good">טוב</option>
+            <option value="Evil">רע</option>
+            <option value="Neutral">ניטרלי</option>
+        </select>
+        <select id="align-type" name="align-type">
+            <option value="Lawful">סדר</option>
+            <option value="Chaotic">תוהו</option>
+            <option value="Neutral">ניטרלי</option>
+        </select><br>
+
+        <label for="level">דרגה:</label>
+        <input type="number" id="level" class="s-input" name="level" value="5">
+
+        <label for="xp">נקודות ניסיון:</label>
+        <input type="number" id="xp" class="s-input" name="xp" value="250">
+
+    </div>
+ 
+    <div class="properties">
+        <p><h2>תכונות</h2></p>
+        <input type="number" id="str" class="property" name="str" value="18"><br>
+        <label for="str">כוח</label><br>
+
+        <input type="number" id="dex" class="property" name="dex" value="18"><br>
+        <label for="str">זריזות</label><br>
+
+        <input type="number" id="con" class="property" name="con" value="18"><br>
+        <label for="con">חוסן</label><br>
+
+        <input type="number" id="wis" class="property" name="wis" value="18"><br>
+        <label for="wis">תבונה</label><br>
+
+        <input type="number" id="int" class="property" name="int" value="18"><br>
+        <label for="int">חוכמה</label><br>
+
+        <input type="number" id="cha" class="property" name="cha" value="18"><br>
+        <label for="cha">כריזמה</label><br>
+
+    </div>
+
+    <div class="c-properties">
+        <p><h2>ערכים</h2></p>
+        <label for="hit-dice" class="hovering">קב"פ:
+            <span class="hove-text">קוביות פגיעה</span>
+        </label>
+        <input type="number" id="hit-dice" class="s-input" name="hit-dice" value="2"><br>
+
+        <label for="hp" class="hovering">נק"פ:
+            <span class="hove-text">נקודות פגיעה</span>
+        </label>
+        <input type="number" id="hp" class="s-input" name="hp" value="10"><br>
+
+        
+        <label for="ac" class="hovering">דרג"ש:
+            <span class="hove-text">דרוג שיריון</span>
+        </label>
+        <input type="number" id="ac" class="s-input" name="ac" value="6"><br>
+
+        <label for="ab">תוסף התקפה:</label>
+        <input type="number" id="ab" class="s-input" name="ab" value="1"><br>
+
+    </div>
+
+    <div class="c-properties">
+        <p><h2>גלגולי הצלה</h2></p>
+            <p>לחשים<br>
+            מוות ורעל<br>
+            נשיפת דרקון<br>
+            מלכודות וסכנות <br>
+        </p>
+    </div>
+</form>
+
+</body>
+</html>
