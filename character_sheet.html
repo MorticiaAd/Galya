@@ -11,7 +11,7 @@
     <form action="/action_page.php">
     <div class="c-set">
         <label for="game-set">שיטה:</label>
-        <input type="text" id="game-setme" name="game-set" value="חרבות וכשפים"><br>
+        <input type="text" id="game-set" name="game-set" value="חרבות וכשפים"><br>
         <h2>דף דמות</h2>
         <label for="c-type">סוג הדמות:</label>
         <input type="text" id="c-type" name="c-type" value="בן-מחצית גשש"><br>
@@ -56,7 +56,14 @@
  
     <div class="properties">
         <p><h2>תכונות</h2></p>
-        <input type="number" id="str" class="property" name="str" value="18"><br>
+        <input type="number" id="str" class="property" name="str" value="18">
+        <label for="ab">התקפה ונזק</label>
+        <input type="number" id="str-damage" class="s-input" name="str-damage" value="1">
+        <label for="ab">פריצת דלתות</label>
+        <input type="number" id="str-doors" class="s-input" name="str-doors" value="1">
+        <label for="ab">מתאם נשיאה</label>
+        <input type="number" id="str-carry" class="s-input" name="str-carry" value="1">
+        <br>
         <label for="str">כוח</label><br>
 
         <input type="number" id="dex" class="property" name="dex" value="18"><br>
@@ -101,12 +108,39 @@
 
     <div class="c-properties">
         <p><h2>גלגולי הצלה</h2></p>
-            <p>לחשים<br>
-            מוות ורעל<br>
-            נשיפת דרקון<br>
-            מלכודות וסכנות <br>
-        </p>
+        <label for="ab">לחשים:</label>
+        <input type="number" id="spell" class="s-input" name="spell" value="1"><br>
+
+        <label for="ab">מוות:</label>
+        <input type="number" id="death" class="s-input" name="death" value="1"><br>
+        
+        <label for="ab">נשיפת דרקון:</label>
+        <input type="number" id="dragon-br" class="s-input" name="dragon-br" value="1"><br>
+
+        <label for="ab">מלכודות וסכנות:</label>
+        <input type="number" id="trap" class="s-input" name="trap" value="1"><br>
+
     </div>
+
+    <div class="c-weapons">
+        <p><h2>נשקים</h2></p>
+        <label for="ab">שם/תיאור קצר:</label>
+        <input type="text" id="weapon" name="weapon" value="1"> <br>
+
+        <label for="ab">תוסף התקפה:</label>
+        <input type="number" id="attack-plus" class="s-input" name="attack-plus" value="1">
+        
+        <label for="ab">נזק:</label>
+        <input type="number" id="w-damage" class="s-input" name="w-damage" value="1">
+
+        <label for="ab">קצב אש:</label>
+        <input type="number" id="fire-rate" class="s-input" name="fire-rate" value="1">
+
+        <label for="ab">:טווח</label>
+        <input type="number" id="range" class="s-input" name="range" value="1">
+
+    </div>
+
 </form>
 
 </body>

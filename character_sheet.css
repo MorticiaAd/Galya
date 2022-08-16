@@ -1,0 +1,58 @@
+
+html {
+    background-color: burlywood;
+    direction: rtl;
+    line-height: 160%;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkslateblue;
+    color: beige;
+    size:inherit;
+    text-align: center;
+}
+
+p, label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #595959;
+}
+
+input, option {
+    text-align: center;
+    /* border: none; */
+    /* border-bottom: 1px solid black; */
+    background-color: oldlace;
+}
+
+.s-input, .property {
+    width: 50px;
+}
+
+div {
+    /* grid-template-columns: 50% 50%; */
+    border: 1px solid brown;
+    width: 38%;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px #888888;
+    background-color: oldlace;
+}
+
+.hovering .hove-text{
+    visibility: hidden;
+   }
+  
+  .hovering:hover .hove-text{
+    visibility: visible;
+  }
+
+.hove-text {
+    color:#888888;
+}
+
+#game-set {
+    font-size:x-large;
+}
